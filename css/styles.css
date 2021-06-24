@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url('/Users/aahanaganjewar/Desktop/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg');
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(193, 100%, 96%);
+  padding: 40px 0;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  align-items: flex-start;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 60px;
+}
+
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+}
+
+.flex > div {
+  flex: 1;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.box {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 40px 0;
+  padding: 60px;
+  background-color: #fff;
+
+}
+
+.box img {
+  width: 80%;
+}
+
+.small-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -50%;
+  z-index: 1;
+}
+
+.circle {
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.copyright {
+  font-size: 75%;
+  margin-top: 100px;
+  margin-bottom: -40px;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 180px 0 60px;
+
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 760px) {
+
+  body {
+    text-align: center;
+  }
+  nav.flex {
+    flex-direction: row;
+  }
+  .flex {
+    flex-direction: column;
+
+  }
+
+  .box-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  footer ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .btn-primary {
+    margin: 30px 0 40px 0;
+  }
+}
